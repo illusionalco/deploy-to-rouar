@@ -1,0 +1,22 @@
+{
+	"name": "deploy-to-rouar",
+	"private": true,
+	"type": "module",
+	"packageManager": "pnpm@10.28.0",
+	"engines": {
+		"node": ">=22.19.0"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build"
+	},
+	"dependencies": {
+		"@flue/runtime": "2.2.2",
+		"hono": "^4.13.13"
+	},
+	"devDependencies": {
+		"@flue/cli": "2.2.2",
+		"@flue/vite": "2.2.2",
+		"vite": "^8.3.4"
+	}
+}
