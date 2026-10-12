@@ -1,0 +1,5 @@
+{
+	"$schema": "./apps/flue/node_modules/@rouar/sdk/rouar.schema.json",
+	"agent": { "root": "apps/flue", "routes": ["/agents"] },
+	"frontend": { "root": "apps/nuxt" }
+}

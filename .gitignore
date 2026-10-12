@@ -1,5 +1,9 @@
 node_modules/
 dist/
+.output/
+.nuxt/
+.data/
 .env
 .env.*
-.rouar/
+/.rouar/*
+!/.rouar/rouar-sdk-*.tgz
