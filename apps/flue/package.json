@@ -1,22 +1,22 @@
 {
-	"name": "@deploy-to-rouar/flue",
-	"private": true,
-	"type": "module",
-	"engines": {
-		"node": ">=22.19.0"
-	},
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build"
-	},
-	"dependencies": {
-		"@flue/runtime": "2.2.2",
-		"@rouar/sdk": "file:../../.rouar/rouar-sdk-0.0.0-shaca64a1e88f65.tgz",
-		"hono": "^4.13.13"
-	},
-	"devDependencies": {
-		"@flue/cli": "2.2.2",
-		"@flue/vite": "2.2.2",
-		"vite": "^8.3.4"
-	}
+  "name": "@deploy-to-rouar/flue",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@flue/runtime": "2.2.2",
+    "@rouar/sdk": "github:illusionalco/rouar-sdk#v0.0.0-sha9e2cf35d40ba",
+    "hono": "^4.13.13"
+  },
+  "devDependencies": {
+    "@flue/cli": "2.2.2",
+    "@flue/vite": "2.2.2",
+    "vite": "^8.3.4"
+  }
 }

@@ -9,7 +9,6 @@ The agent, `assistant`, uses the hosted model `rouar/openai/gpt-6-luna` through 
 ```text
 rouar.json                          Where the agent and the frontend are
 pnpm-workspace.yaml                 Workspace with apps/*
-.rouar/rouar-sdk-<version>.tgz      @rouar/sdk, committed so installs need no API key
 apps/flue/                          The Flue agent
   src/agents/assistant.ts           The Assistant agent
   src/app.ts                        Mounts the agent at /agents/assistant
@@ -25,7 +24,7 @@ apps/nuxt/                          The Nuxt app
 
 `rouar.json` sets `agent.root` to `apps/flue` and `frontend.root` to `apps/nuxt`. Requests under `/agents` go to the agent and every other path goes to the Nuxt app.
 
-`@rouar/sdk` is not on npm yet. Both apps depend on the tarball in `.rouar/` with a `file:` dependency, as `rouar sdk add` would set up. When rouar builds a deployment, it installs its own current SDK into both packages. `apps/flue/src/db.ts` is not in this repository; rouar adds it during the build.
+`@rouar/sdk` is not on npm yet. Both apps install a provisional build from the public repository [illusionalco/rouar-sdk](https://github.com/illusionalco/rouar-sdk), pinned to a tag. When rouar builds a deployment, it installs its own current SDK into both packages. `apps/flue/src/db.ts` is not in this repository; rouar adds it during the build.
 
 ## Browser access is open to anyone (testing only)
 
@@ -88,4 +87,4 @@ If deployment protection is off, the `Authorization` header is not needed.
 
 ## Update the SDK
 
-With a rouar API key, run `npx -p @rouar/sdk rouar sdk add` at the repository root, then `pnpm install`, and commit the new tarball, both `package.json` files, and `pnpm-lock.yaml`.
+Change the tag of `github:illusionalco/rouar-sdk#<tag>` in both `package.json` files, run `pnpm install`, and commit both `package.json` files and `pnpm-lock.yaml`.

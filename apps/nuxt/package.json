@@ -1,20 +1,20 @@
 {
-	"name": "@deploy-to-rouar/nuxt",
-	"private": true,
-	"type": "module",
-	"engines": {
-		"node": ">=22.19.0"
-	},
-	"scripts": {
-		"dev": "nuxt dev",
-		"build": "nuxt build",
-		"preview": "nuxt preview",
-		"postinstall": "nuxt prepare"
-	},
-	"dependencies": {
-		"@flue/sdk": "^2.2.2",
-		"@rouar/sdk": "file:../../.rouar/rouar-sdk-0.0.0-shaca64a1e88f65.tgz",
-		"nuxt": "^4.6.1",
-		"vue": "^3.5.43"
-	}
+  "name": "@deploy-to-rouar/nuxt",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@flue/sdk": "^2.2.2",
+    "@rouar/sdk": "github:illusionalco/rouar-sdk#v0.0.0-sha9e2cf35d40ba",
+    "nuxt": "^4.6.1",
+    "vue": "^3.5.43"
+  }
 }
