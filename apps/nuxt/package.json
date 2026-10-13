@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@flue/sdk": "^2.2.2",
-    "@rouar/sdk": "github:illusionalco/rouar-sdk#v0.0.0-sha9e2cf35d40ba",
+    "@rouar/sdk": "github:illusionalco/rouar-sdk#v0.0.0-sha90e07b856fdc",
     "nuxt": "^4.6.1",
     "vue": "^3.5.43"
   }
