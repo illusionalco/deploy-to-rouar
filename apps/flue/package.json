@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@flue/runtime": "2.2.2",
-    "@rouar/sdk": "github:illusionalco/rouar-sdk#v0.0.0-sha90e07b856fdc",
+    "@rouar/sdk": "github:illusionalco/rouar-sdk#v0.0.0-sha9feaf052e121",
     "hono": "^4.13.13"
   },
   "devDependencies": {
